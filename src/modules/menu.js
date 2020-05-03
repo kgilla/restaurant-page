@@ -4,11 +4,11 @@ const renderMenu = () => {
 
   const page = document.querySelector(".page");
   
-  const heading = makeElement("h1", "heading", "Menu", page);
+  const heading = makeElement("h2", "sub-heading", "Menu", page);
 
   const menu = makeElement("ul", "menu", "", page);
 
-  const item1 = makeElement("li", "menu-item", "Ontairo Asparagus", menu);
+  const item1 = makeElement("li", "menu-item", "Ontario Asparagus", menu);
   makeElement("p", "menu-desc", "Fresh asparagus, bacon vinegrette, gremolatta", item1);
   makeElement("p", "menu-price", "15", item1);
 
