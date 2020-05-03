@@ -3,6 +3,8 @@ import './reset.css';
 import {renderHeader as header} from './modules/navbar';
 import {renderHomepage} from './modules/home';
 import {renderMenu} from './modules/menu';
+import {renderContact} from './modules/contact';
+import {socialLinks} from './modules/social';
 import {makeElement} from './modules/functions';
 
 const restaurant = (() => {
@@ -11,7 +13,9 @@ const restaurant = (() => {
 const main = document.getElementById("content");
 const nav = header;
 const page = makeElement("div", "page", "", main);
+
 renderHomepage();
+socialLinks();
 
 /* adding listeners to navbar  */
 nav.ele1.addEventListener("click", makeHome);
@@ -34,6 +38,7 @@ function makeHome() {
 
 function makeContact() {
   clearPage();
+  renderContact();
 } 
 
 })();

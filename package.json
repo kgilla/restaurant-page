@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "style-loader": "^1.2.1",

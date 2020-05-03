@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   background-image: url(background.jpg);
   background-size: cover;
   background-position: center;
@@ -10,9 +11,8 @@ body {
 #content {
   width: 60%;
   margin: 0 auto;
-  background: #eee;
-  border: solid 2px #333;
-  border-radius: 5px;
+  background: #ddd;
+  border: solid #aaa 1px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -21,7 +21,14 @@ body {
   font-size: 3.5rem;
   font-weight: bold;
   text-decoration: underline;
-  padding: 5%;
+  padding: 2%;
+}
+
+.image {
+  position: relative;
+  width: 70%;
+  height: auto;
+  left: 14%;
 }
 
 .navbar {
@@ -33,20 +40,80 @@ body {
   border-bottom: solid #aaa 1px;
 }
 
-.nav-link {
+.nav-link, .social-link {
   flex: 1;
   color: #111;
   text-decoration: none;
   font-size: 1.4rem;
 }
 
-.nav-link:hover {
+.nav-link:hover, .social-link:hover {
   text-decoration: underline;
+}
+
+.page {
+  padding: 2.5%;
 }
 
 .quote {
   text-align: center;
   font-size: 2rem;
   font-style: italic;
+  padding: 3%;
+  color: #444;
+}
+
+.para {
+  padding: 2.5%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.reservation {
+  position: relative;
+  left: 33%;
+  margin: 3% auto;
   padding: 2%;
+  font-size: 1.5rem;
+  background: #ccc;
+  border: solid 1px #aaa;
+  font-family: inherit;
+}
+
+.reservation:hover {
+  background: #aaa;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 3%;
+}
+
+.menu-desc {
+  font-size: 1.3rem;
+  padding: 1%;
+  font-weight: normal;
+}
+
+.menu-price {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ccc;
+  padding: 3%;
+}
+
+.social-link {
+  font-style: italic;
 }
